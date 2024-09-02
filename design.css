@@ -1,0 +1,378 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+/*   font-family: "New Amsterdam", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap');
+
+/*   font-family: "Moderustic", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/*     font-family: "Moderustic", sans-serif; */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+body{
+    background-color: #b9b9b91d;
+    scroll-behavior: smooth;
+}
+
+
+/* L'en tete */
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 10px;
+    background-color: white;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.479);
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+
+header h2{
+    font-family: "New Amsterdam", sans-serif;
+    letter-spacing: 4px;
+    color: black;
+    border-bottom: 4px solid black;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    margin: 30px 0 15px;
+    width: 90vw;
+}
+
+
+header nav p{
+    font-family: "Moderustic", sans-serif;
+}
+
+
+header nav p a{
+    color: gray;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 0 0 5px;
+    transition: 0.3s;
+    position: relative;
+}
+
+
+header nav p a:hover{
+    color: rgba(128, 128, 128, 0.354);
+}
+
+
+header nav p a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 10%;
+    background-color: gray;
+    transition: 0.3s;
+}
+
+
+header nav p a:hover::before{
+    width: 100%;
+}
+
+
+header .menu{
+    display: none;
+}
+
+
+header .menu i{
+    font-size: 40px;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+header .menu i:hover{
+    color: gray;
+}
+
+
+/* Spécialités */
+
+
+#entrance{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#entrance h2{
+    font-family: "New Amsterdam", sans-serif;
+    letter-spacing: 2px;
+    margin: 20px 0;
+    text-align: center;
+    background-color: orangered;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+#entrance .block{
+    width: 90%;
+    margin: 20px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+#entrance .block .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    padding: 20px 15px;
+    border-radius: 5px;
+}
+
+
+#entrance .block .box img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+
+
+/* Les Etoiles */
+
+
+.stars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.stars .align{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
+.stars .align i{
+    font-size: 40px;
+    color: rgb(239, 239, 15);
+}
+
+
+
+
+/* Question Réponse */
+
+
+
+
+.faq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 20px;
+}
+
+
+.faq .quiz{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 5px 25%;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid rgba(128, 128, 128, 0.247);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.faq .quiz:active{
+    box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.612),
+    -2px -2px 5px rgba(128, 128, 128, 0.612);
+}
+
+
+.faq .quiz .action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.action .bxs-down-arrow{
+    display: none;
+}
+
+
+.action .bxs-up-arrow{
+    display: block;
+}
+
+
+.faq .quiz .action h2{
+    color: black;
+    margin: 0 15px 10px;
+    font-family: "Moderustic", sans-serif;
+}
+
+
+.faq .quiz .desc{
+    padding: 10px;
+    font-size: 17px;
+    border-top: 2px solid rgba(128, 128, 128, 0.247);
+    text-align: center;
+    display: none;
+}
+
+
+.quiz .desc p a{
+    color: orangered;
+    border-bottom: 2px solid orangered;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 10px;
+    background-color: white;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.479);
+}
+
+
+footer .logo{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(128, 128, 128, 0.546);
+    border-radius: 50%;
+}
+
+
+footer .contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+
+footer .contact{
+    font-weight: bold;
+}
+
+
+footer .contact p span{
+    font-weight: bold;
+    font-size: 20px;
+    color: gray;
+}
+
+
+@media screen and (max-width:640px) {
+
+    header{
+        justify-content: center;
+    }
+
+
+    header h2{
+        margin: 0 30px;
+    }
+
+    header nav{
+        display: none;
+    }
+
+
+    #entrance .block{
+        width: 96%;
+        margin: 20px 2%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+
+    #entrance .block .box img{
+        width: 170px;
+        height: 170px;
+    }
+
+
+    .faq .quiz{
+        width: 100%;
+        margin: 5px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width:440px) {
+
+    #entrance .block{
+        width: 98vw;
+        margin: 20px 10px;
+        gap: 20px;
+    }
+
+
+    #entrance .block .box img{
+        width: 130px;
+        height: 130px;
+    }
+    
+}

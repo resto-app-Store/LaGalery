@@ -1,0 +1,98 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+/*   font-family: "New Amsterdam", sans-serif; */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+body{
+    background-color: #b9b9b91d;
+}
+
+
+h2{
+    font-family: "New Amsterdam", sans-serif;
+    letter-spacing: 4px;
+    color: black;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+    position: relative;
+    animation: changes 6s 1s;
+}
+
+
+h2::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 10%;
+    background-color: gray;
+}
+
+
+@keyframes changes {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+
+.block{
+    width: 90%;
+    margin: 20px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.block .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    padding: 20px 15px;
+    border-radius: 5px;
+}
+
+
+.block .box img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+.back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.back a i{
+    color: red;
+    font-size: 40px;
+    margin: 5px 10px 10px;
+}
